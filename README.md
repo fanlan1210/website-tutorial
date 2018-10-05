@@ -54,13 +54,13 @@ body(身體):使用者可看到的內容，主要位於這裡。
 ---
 
 ### 圖片
-```
+```html
 <img src="#">
 ```
 *src* : 來源(source)路徑連結，必須是直接連結至檔案本身。
 
 範例: 
-```
+```html
 <img src="https://fanlan1210.github.io/files/rubiks-cube-157058.svg">
 ```
 這樣將會顯示一張魔術方塊的圖片在網頁上，如圖:
@@ -78,15 +78,15 @@ CSS，全名Cascading Style Sheets，中文為層疊樣式表。
 
 在此先介紹常用的其中2種。
 ### 標籤內套用
-在起始標籤中，加入`style="..."`，*...*替換為欲使用的樣式。
+在起始標籤中，加入`style="..."`， *...* 替換為欲使用的樣式。
 
 例:
-```
+```html
 <p style=”...”>
 ```
 ### 連結檔案套用
 在`<head>`標籤中，加入`<link>`標籤，連結至CSS檔。
-```
+```html
 <head>
     <link rel="stylesheet" type="text/css" href="theme.css">
 </head>
@@ -97,7 +97,7 @@ CSS，全名Cascading Style Sheets，中文為層疊樣式表。
 * *href* 內填入連結位址
 ## CSS內容
 CSS的語法:
-```
+```css
 	選擇器(selector) {
 		屬性(property) : 值(value) ;
 }
@@ -125,7 +125,7 @@ color的值有現成的色彩英文可以輸入，像是常見的green.red.blue.
 
 #### background-size: 調整背景大小
 可以使用寬度和高度來調整，單位仍然支援絕對與相對。
-```
+```css
 background-size: 寬 高;
 ```
 * *cover* : 覆蓋模式，將會忽略寬高比，以整個填滿為優先。
