@@ -6,7 +6,7 @@
 
 # HTML
 ## 對HTML的基本認識
-HTML，全名HyperText Markup Language，中文譯為超文本標記語言
+HTML，全名HyperText Markup Language，中文譯為超文本標記語言，
 為形成網頁的最基本骨架。
 目前主要使用HTML5，在此版本最著名的即是擴充了對多媒體的支援。
 以前要播放影片，或是跑動畫，幾乎離不開Flash，
