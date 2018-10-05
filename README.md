@@ -12,8 +12,6 @@ HTML，全名HyperText Markup Language，中文譯為超文本標記語言
 以前要播放影片，或是跑動畫，幾乎離不開Flash，
 但現在這些可以由`<video>`與`<canvas>`等HTML標籤輕易完成。
 
-![由 W3C, CC BY 3.0, https://commons.wikimedia.org/w/index.php?curid=12736763](https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png)
-
 另外，其實它並不是**程式語言**，而是**標記語言**
 
 HTML網頁主要由標籤(tag)構成，而標籤通常是成對的，分別稱做起始標籤(start tag)和結束標籤(end tag)。
