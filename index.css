@@ -1,4 +1,13 @@
-* {
-    background-color: black;
-    color: white;
+body {
+    background-color: whitesmoke;
+    background-image: url(https://i.imgur.com/fy9qUaS.png);
+}
+
+h1,h2,h3,h4,h5 {
+    text-align: left;
+    color: darkgreen;
+}
+
+p {
+    color: #00AF55;
 }
