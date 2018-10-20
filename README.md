@@ -80,7 +80,7 @@ CSS，全名Cascading Style Sheets，中文為層疊樣式表。
 
 例:
 ```html
-<p style=”...”>
+<p style="color: red;">
 ```
 ### 連結檔案套用
 在`<head>`標籤中，加入`<link>`標籤，連結至CSS檔。
@@ -130,6 +130,9 @@ color的值有現成的色彩英文可以輸入，像是常見的green.red.blue.
 background-size: 寬 高;
 ```
 * *cover* : 覆蓋模式，將會忽略寬高比，以整個填滿為優先。
+```css
+background-size: cover;
+```
 
 # Github
 在此主要使用github網站進行操作
@@ -152,7 +155,7 @@ Github Pages是利用儲存庫裡的檔案，建立網站的功能。
 可以暫時想像成一個儲存空間
 
 使用網站的新增功能，建立一個儲存庫(記得勾選用README初始化)
-儲存庫名字填“使用者名稱.github.io”
+儲存庫名字填*使用者名稱.github.io*
 ![](https://i.imgur.com/DK6F7bt.png)
 ![](https://i.imgur.com/n1PFlc2.png)
 ### 上傳檔案至儲存庫
@@ -161,3 +164,15 @@ Github Pages是利用儲存庫裡的檔案，建立網站的功能。
 記得在commit時，簡單寫個描述
 ## 網站發佈
 在瀏覽器輸入自己網站的網址(儲存庫名稱)，看到自己的網站，完成!
+
+-----
+# 教學資源
+## 教學
+英文
+* [W3Schools](http://www.w3schools.com/)
+
+中文
+* [Wibibi 網頁設計教學百科](http://www.wibibi.com)
+
+## 模板
+* [HTML5UP](https://html5up.net)
