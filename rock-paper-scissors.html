@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>猜拳</title>
+    </head>
+    <body>
+        
+        <script>
+            alert("猜拳")
+            var userChoice = prompt("剪刀，石頭，布?");
+            var computerChoice = Math.random();
+            if (computerChoice < 0.34) {
+                computerChoice = "rock";
+            } else if(computerChoice <= 0.67) {
+                computerChoice = "paper";
+            } else {
+                computerChoice = "scissors";
+            }
+            alert("電腦出 " + computerChoice);
+                if (choice1 === choice2) {
+                    return "The result is a tie!";
+                } 
+                else if (choice1 === "rock") {
+                    if (choice2 === "scissors") {
+                        return "rock wins";
+                    } 
+                    else {
+                        return "paper wins";
+                    }
+                }
+                else if (choice1 === "paper") {
+                    if (choice2 === "rock"){
+                        return "paper wins"
+                    }
+                    else {
+                        return "scissors wins"
+                    }
+                }
+                else {
+                    if (choice2 === "rock") {
+                        return "rock wins"
+                    }
+                    else {
+                        return "scissors wins"
+                    }
+                }
+            };
+        </script>
+
+    </body>
+</html>
