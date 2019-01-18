@@ -7,44 +7,25 @@
         
         <script>
             alert("猜拳")
-            var userChoice = prompt("剪刀，石頭，布?");
-            var computerChoice = Math.random();
-            if (computerChoice < 0.34) {
-                computerChoice = "rock";
-            } else if(computerChoice <= 0.67) {
-                computerChoice = "paper";
-            } else {
-                computerChoice = "scissors";
+            var user = prompt("剪刀，石頭，布?");
+            var computer = Math.random();
+            if (computer < 0.33) { computer = "剪刀"; }
+            else if (computer <= 0.67) { computer = "石頭"; }
+            else { computer = "布"; }
+            alert("電腦出 " + computer);
+            if (user == computer){ alert("平手!"); }
+            else if (user == "剪刀") {
+                if (computer == "布") { alert("玩家獲勝"); } 
+                else { alert("電腦獲勝"); }
             }
-            alert("電腦出 " + computerChoice);
-                if (choice1 === choice2) {
-                    return "The result is a tie!";
-                } 
-                else if (choice1 === "rock") {
-                    if (choice2 === "scissors") {
-                        return "rock wins";
-                    } 
-                    else {
-                        return "paper wins";
-                    }
-                }
-                else if (choice1 === "paper") {
-                    if (choice2 === "rock"){
-                        return "paper wins"
-                    }
-                    else {
-                        return "scissors wins"
-                    }
-                }
-                else {
-                    if (choice2 === "rock") {
-                        return "rock wins"
-                    }
-                    else {
-                        return "scissors wins"
-                    }
-                }
-            };
+            else if (user == "石頭") {
+                if (computer == "剪刀"){ alert("玩家獲勝"); }
+                else { alert("電腦獲勝"); }
+            }
+            else {
+                if (computer == "剪刀") { alert("電腦獲勝"); }
+                else { alert("玩家獲勝"); }
+            }
         </script>
 
     </body>

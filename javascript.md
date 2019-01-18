@@ -1,3 +1,5 @@
+# JavaScript教學
+---
 ## 前置:開發軟體介紹
 ### Adobe Brackets
 ![](https://upload.wikimedia.org/wikipedia/commons/b/b0/Adobe_Brackets_v0.0.x_icon.png)
@@ -125,8 +127,43 @@ else { computer = "布"; }
 ```
 由於有剪刀、石頭、布三種拳，因此我們透過把`Math.random()`產生的隨機數範圍進行分配，來得到電腦的出拳。
 
-### 判斷勝負
+最後再將電腦出的拳給顯示出來
+```js
+alert("電腦出 " + computer)
+```
 
+### 判斷勝負
+接下來要判斷勝負，可以先從是否平手開始
+```js
+if (user == computer){ alert("平手!"); }
+```
+接著再分別對剪刀、石頭、布進行判斷
+```js
+else if (user == "剪刀") {
+    if (computer == "布") {
+        alert("玩家獲勝");
+    } 
+    else {
+        alert("電腦獲勝");
+    }
+}
+else if (user == "石頭") {
+    if (computer == "剪刀"){
+        alert("玩家獲勝");
+    }
+    else {
+        alert("電腦獲勝");
+    }
+}
+else {
+    if (computer == "剪刀") {
+        alert("電腦獲勝");
+    }
+    else {
+        alert("玩家獲勝");
+    }
+}
+```
 
 ## 發布至網際網路
 ### git介紹
