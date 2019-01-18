@@ -44,13 +44,13 @@ console.log("hello world")
 ### 彈窗提示: alert()
 如果想要更直接的顯示訊息給使用者，可以使用`alert()`
 ```js
-alert("hello world")
+alert("hello world");
 ```
 
 ### 彈窗輸入: prompt()
 除了彈出視窗顯示訊息外，也可以讓使用者輸入文字給程式。
 ```js
-prompt("type in something")
+prompt("type in something");
 ```
 
 ### 宣告變數: var
@@ -129,7 +129,7 @@ else { computer = "布"; }
 
 最後再將電腦出的拳給顯示出來
 ```js
-alert("電腦出 " + computer)
+alert("電腦出 " + computer);
 ```
 
 ### 判斷勝負
@@ -184,6 +184,7 @@ git會需要儲存庫，來進行檔案的儲存，
 
 使用網站的新增功能，建立一個儲存庫(記得勾選用README初始化)
 儲存庫名字填*使用者名稱.github.io*
+
 ![](https://i.imgur.com/DK6F7bt.png)
 ![](https://i.imgur.com/n1PFlc2.png)
 ### 上傳檔案至儲存庫
