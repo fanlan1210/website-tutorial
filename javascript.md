@@ -96,9 +96,9 @@ A 條件運算子 B
 ```js
 var A = prompt("A?");
 var B = prompt("B?");
-if (A > B){ console.log("A大於B"); }
-else if (A < B){ console.log("A小於B"); }
-else if (A == B) { console.log("A等於B"); }
+if (A > B){ console.log("A 大於 B"); }
+else if (A < B){ console.log("A 小於 B"); }
+else if (A == B) { console.log("A 等於 B"); }
 else { console.log("錯誤"); }
 ```
 
