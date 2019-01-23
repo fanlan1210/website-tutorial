@@ -6,26 +6,30 @@
     <body>
         
         <script>
-            alert("猜拳")
+            alert("猜拳");
             var user = prompt("剪刀，石頭，布?");
             var computer = Math.random();
+            
             if (computer < 0.33) { computer = "剪刀"; }
             else if (computer <= 0.67) { computer = "石頭"; }
             else { computer = "布"; }
             alert("電腦出 " + computer);
-            if (user == computer){ alert("平手!"); }
-            else if (user == "剪刀") {
-                if (computer == "布") { alert("玩家獲勝"); } 
-                else { alert("電腦獲勝"); }
+            function compare(choice1,choice2){
+                if (choice1 == choice2){ return "平手!"; }
+                else if (choice1 == "剪刀") {
+                    if (choice2 == "布") { return "玩家獲勝"; } 
+                    else { return "電腦獲勝"; }
+                }
+                else if (choice1 == "石頭") {
+                    if (choice2 == "剪刀"){ return"玩家獲勝"; }
+                    else { return "電腦獲勝"; }
+                }
+                else {
+                    if (choice2 == "剪刀") { return"電腦獲勝"; }
+                    else { return "玩家獲勝"; }
+                }
             }
-            else if (user == "石頭") {
-                if (computer == "剪刀"){ alert("玩家獲勝"); }
-                else { alert("電腦獲勝"); }
-            }
-            else {
-                if (computer == "剪刀") { alert("電腦獲勝"); }
-                else { alert("玩家獲勝"); }
-            }
+            alert(compare(user,computer));
         </script>
 
     </body>
