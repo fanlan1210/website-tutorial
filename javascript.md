@@ -162,6 +162,7 @@ console.log( function(A,B) );
 ```js
 var user = prompt("剪刀，石頭，布?");
 ```
+
 ### 電腦出拳:隨機數的使用(Math.random)
 接下來則是讓電腦出拳。
 由於為了讓電腦能夠隨機出一拳，在這裡將會使用產生隨機亂數的函數:`Math.random()`，
@@ -169,13 +170,14 @@ var user = prompt("剪刀，石頭，布?");
 ```js
 var computer = Math.random();
 ```
-`Math.random()`將會隨機從0~1之間取一小數，我們可以用if對其產生的數字進行出拳的分配。
 
+`Math.random()`將會隨機從0~1之間取一小數，我們可以用if對其產生的數字進行出拳的分配。
 ```js
 if (computer < 0.33) { computer = "剪刀"; }
 else if (computer <= 0.67) { computer = "石頭"; }
 else { computer = "布"; }
 ```
+
 由於有剪刀、石頭、布三種拳，因此我們透過把`Math.random()`產生的隨機數範圍進行分配，來得到電腦的出拳。
 
 最後再將電腦出的拳給顯示出來
