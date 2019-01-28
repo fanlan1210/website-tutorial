@@ -114,10 +114,18 @@ A 條件運算子 B
 ```js
 var A = prompt("A?");
 var B = prompt("B?");
-if (A > B){ console.log("A 大於 B"); }
-else if (A < B){ console.log("A 小於 B"); }
-else if (A == B) { console.log("A 等於 B"); }
-else { console.log("錯誤"); }
+if (A > B){
+  console.log("A 大於 B");
+}
+else if (A < B){
+  console.log("A 小於 B");
+}
+else if (A == B) {
+  console.log("A 等於 B");
+}
+else {
+   console.log("錯誤");
+ }
 ```
 ### 副程式(函式)的使用:function
 在一個大程式中，可以再切分出許多小程式，
@@ -145,10 +153,18 @@ function 名稱(傳入變數1,傳入變數2...){
 var A = prompt("A?");
 var B = prompt("B?");
 function judge(a,b){
-    if (A > B){ return "A 大於 B"; }
-    else if (A < B){ return "A 小於 B"; }
-    else if (A == B) { return "A 等於 B"; }
-    else { return "錯誤"; }
+    if (A > B){
+       return "A 大於 B";
+    }
+    else if (A < B){
+      return "A 小於 B";
+    }
+    else if (A == B) {
+      return "A 等於 B";
+    }
+    else {
+      return "錯誤";
+    }
 }
 console.log( function(A,B) );
 ```
@@ -173,9 +189,15 @@ var computer = Math.random();
 
 `Math.random()`將會隨機從0~1之間取一小數，我們可以用if對其產生的數字進行出拳的分配。
 ```js
-if (computer < 0.33) { computer = "剪刀"; }
-else if (computer <= 0.67) { computer = "石頭"; }
-else { computer = "布"; }
+if (computer < 0.33) {
+  computer = "剪刀";
+}
+else if (computer <= 0.67) {
+  computer = "石頭";
+}
+else {
+  computer = "布";
+}
 ```
 
 由於有剪刀、石頭、布三種拳，因此我們透過把`Math.random()`產生的隨機數範圍進行分配，來得到電腦的出拳。
@@ -188,7 +210,9 @@ alert("電腦出 " + computer);
 ### 判斷勝負
 接下來要判斷勝負，可以先從是否平手開始
 ```js
-if (user == computer){ alert("平手!"); }
+if (user == computer){
+  alert("平手!");
+}
 ```
 
 接著再分別對剪刀、石頭、布進行判斷
