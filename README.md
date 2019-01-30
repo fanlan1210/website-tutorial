@@ -3,5 +3,5 @@
 
 ## 檔案架構
 
-* [html-css](/html-css): HTML+CSS與使用Github Pages架站教學
-* [javascript](/javascript): JavaScript教學
+* [html-css](./html-css): HTML+CSS與使用Github Pages架站教學
+* [javascript](./javascript): JavaScript教學
