@@ -236,10 +236,10 @@ var computer = Math.random();
 `Math.random()`將會隨機從 0~1 之間取一小數，我們可以用 if 對其產生的數字進行出拳的分配。
 
 ```js
-if (computer < 0.33) {
+if (computer <= 0.33) {
   computer = "剪刀";
 }
-else if (computer <= 0.67) {
+else if (computer <= 0.66) {
   computer = "石頭";
 }
 else {
