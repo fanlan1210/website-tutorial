@@ -207,7 +207,7 @@ function judge(a,b){
       return "錯誤";
     }
 }
-console.log( function(A,B) );
+console.log( judge(A,B) );
 ```
 
 ## 實作：猜拳
