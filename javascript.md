@@ -145,8 +145,8 @@ A 條件運算子 B
 假如兩變數之間無大小關係（例如 A 或 B 不是數字），則顯示錯誤。
 
 ```js
-var A = prompt("A?");
-var B = prompt("B?");
+var A = Number(prompt("A?"));
+var B = Number(prompt("B?"));
 if (A > B){
   console.log("A 大於 B");
 }
