@@ -191,8 +191,8 @@ function 名稱(傳入變數1, 傳入變數2...){
 製作成一個函式來使用。
 
 ```js
-var A = prompt("A?");
-var B = prompt("B?");
+var A = Number(prompt("A?"));
+var B = Number(prompt("B?"));
 function judge(a,b){
     if (A > B){
        return "A 大於 B";
